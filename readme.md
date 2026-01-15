@@ -31,12 +31,23 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 **Vastaukset:**
 - "Myynnin puolella" / "Sisäisissä prosesseissa" → B1
 - "Meillä on kunnossa" / "Ei oikeastaan" → C1
+- Hiljaisuus / "Öö..." / "En oikein tiiä" → A3B
 - "Ei kiinnosta" → D1
 - "Ei oo aikaa" → E1
 - "Soita myöhemmin" → F1
 - "Meillä on jo toimittaja" → G1
 - "En päätä näistä" → H1
 - "Lähetä sähköpostia" → S1
+
+---
+
+## A3BA SELVENNETÄÄN KYSYMYSTÄ
+
+> **"Eli yksinkertasesti: onks teillä käytössä useempi eri ohjelma tai järjestelmä – esim. CRM, laskutus, varausjärjestelmä – ja joutuuks niiden välillä siirtää tietoa käsin?"**
+
+- "Joo" / "On useempi" → B1
+- "Ei oikeestaan" / "Ei oo monta" → C1
+- Edelleen epäselvä → B4
 
 ---
 

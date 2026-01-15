@@ -1,42 +1,42 @@
 # KYLMÄSOITTOSKRIPTI
 
-Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
+Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan B1
 
 ---
 
-## [A1R] AVAUS
+## A1R AVAUS
 
 > **"Moikka, Marius tässä – soitanko huonoon aikaan vai ehditkö hetken?"**
 
 *[Tauko – odota vastausta]*
 
-→ A2R
+→ A2
 
 ---
 
-## [A2R] SILTA
+## A2R SILTA
 
 > **"Mä soitan, koska me nähään tällä hetkellä monilla suomalaisilla pk-yrityksillä sama ilmiö digipuolella."**
 
 *[Tauko 1-2 sek]*
 
-→ A3R
+→ A3
 
 ---
 
-## [A3R] ONGELMA + REFERENSSI + KYSYMYS
+## A3R ONGELMA + REFERENSSI + KYSYMYS
 
 > **"Kun pk-yritys kasvaa, digipuoli kasvaa usein vähän sinne sun tänne – lopputulos on kasa järjestelmiä, jotka ei oikein puhu keskenään. Esimerkiks Bo LKV:llä tilanne oli pitkälti tää ennen kun alettiin yhessä purkaa kokonaisuutta. Näkyyks tää teillä enemmän myynnin puolella vai sisäsissä prosesseissa?"**
 
 **Vastaukset:**
-- "Myynnin puolella" / "Sisäisissä prosesseissa" → B1R
-- "Meillä on kunnossa" / "Ei oikeastaan" → C1R
-- "Ei kiinnosta" → D1R
-- "Ei oo aikaa" → E1R
-- "Soita myöhemmin" → F1R
-- "Meillä on jo toimittaja" → G1R
-- "En päätä näistä" → H1R
-- "Lähetä sähköpostia" → S1R
+- "Myynnin puolella" / "Sisäisissä prosesseissa" → B1
+- "Meillä on kunnossa" / "Ei oikeastaan" → C1
+- "Ei kiinnosta" → D1
+- "Ei oo aikaa" → E1
+- "Soita myöhemmin" → F1
+- "Meillä on jo toimittaja" → G1
+- "En päätä näistä" → H1
+- "Lähetä sähköpostia" → S1
 
 ---
 
@@ -44,179 +44,179 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [B1R] MYYNTI/PROSESSIT – SYVENTÄVÄ
+## B1R MYYNTI/PROSESSIT – SYVENTÄVÄ
 
 > **"Millanen tilanne se on konkreettisesti – onks se enemmän et tietoo joutuu siirtään käsin paikasta toiseen, vai et kokonaiskuvaa on vaikee saada?"**
 
-- "Käsin siirtämistä" → B2R
-- "Kokonaiskuva puuttuu" → B3R
-- Epäselvä/molemmat → B4R
+- "Käsin siirtämistä" → B2
+- "Kokonaiskuva puuttuu" → B3
+- Epäselvä/molemmat → B4
 
 ---
 
-## [B2R] KÄSIN SIIRTÄMINEN
+## B2R KÄSIN SIIRTÄMINEN
 
 > **"Paljon siihen menee aikaa viikossa, suurin piirtein?"**
 
-- "Paljon" / "Liikaa" / antaa numeron → BOOKR
-- "En tiiä" / "Vähän" → B5R
+- "Paljon" / "Liikaa" / antaa numeron → BOOK
+- "En tiiä" / "Vähän" → B5
 
 ---
 
-## [B3R] KOKONAISKUVA PUUTTUU
+## B3R KOKONAISKUVA PUUTTUU
 
 > **"Miten te tällä hetkellä seuraatte et mikä toimii ja mikä ei?"**
 
-- "Ei oo tapaa" / "Exceleillä" / epäselvä → BOOKR
-- "On raportointi" / "Toimii hyvin" → B6R
+- "Ei oo tapaa" / "Exceleillä" / epäselvä → BOOK
+- "On raportointi" / "Toimii hyvin" → B6
 
 ---
 
-## [B4R] MOLEMMAT/EPÄSELVÄ
+## B4R MOLEMMAT/EPÄSELVÄ
 
 > **"Onks sulla joku käsitys montako eri järjestelmää teillä pyörii yhteensä?"**
 
-- Antaa numeron / "paljon" / "liikaa" → BOOKR
-- "Ei hajua" → BOOKR
-- "Muutama" / "Ei montaa" → PEHMEÄR
+- Antaa numeron / "paljon" / "liikaa" → BOOK
+- "Ei hajua" → BOOK
+- "Muutama" / "Ei montaa" → PEHMEA
 
 ---
 
-## [B5R] "VÄHÄN" / "EN TIIÄ"
+## B5R "VÄHÄN" / "EN TIIÄ"
 
 > **"Se on aika yleistä – monesti se aika vuotaa huomaamatta useesta eri kohtaa. Siks me tehään näitä katsauksia missä näkee konkreettisesti missä se aika menee."**
 
-→ BOOKR
+→ BOOK
 
 ---
 
-## [B6R] "ON RAPORTOINTI"
+## B6R "ON RAPORTOINTI"
 
 > **"Hyvä – näkyykö sieltä selvästi missä menee eniten aikaa tai rahaa?"**
 
-- "Joo näkyy" + tyytyväinen → PEHMEÄR
-- "No ei oikeestaan" / epävarma → BOOKR
+- "Joo näkyy" + tyytyväinen → PEHMEA
+- "No ei oikeestaan" / epävarma → BOOK
 
 ---
 
-## [C1R] "MEILLÄ ON KUNNOSSA"
+## C1R "MEILLÄ ON KUNNOSSA"
 
 > **"Hyvä homma – harva pystyy sanoo noin. Minkälainen tiimi teillä pitää ton kasassa, onks se sisänen vai ulkonen kumppani?"**
 
-- "Sisäinen tiimi" → C2R
-- "Ulkoinen kumppani" → C3R
-- "Ite hoidan" / "Mä ite" → C4R
+- "Sisäinen tiimi" → C2
+- "Ulkoinen kumppani" → C3
+- "Ite hoidan" / "Mä ite" → C4
 
 ---
 
-## [C2R] SISÄINEN TIIMI
+## C2R SISÄINEN TIIMI
 
 > **"Onks se yks henkilö vai useempi?"**
 
-- "Yks henkilö" → C5R
-- "Useempi" / "Tiimi" → PEHMEÄR
+- "Yks henkilö" → C5
+- "Useempi" / "Tiimi" → PEHMEA
 
 ---
 
-## [C3R] ULKOINEN KUMPPANI
+## C3R ULKOINEN KUMPPANI
 
 > **"Miten se on toiminu – saatteks apua sillon ku tarvitte?"**
 
-- "Hyvin" / tyytyväinen → PEHMEÄR
-- "No ei aina" / "Vaihtelevasti" → C6R
+- "Hyvin" / tyytyväinen → PEHMEA
+- "No ei aina" / "Vaihtelevasti" → C6
 
 ---
 
-## [C4R] "ITE HOIDAN"
+## C4R "ITE HOIDAN"
 
 > **"Okei – miten paljon aikaa siihen menee viikossa, suurin piirtein?"**
 
-- "Paljon" / "Liikaa" → BOOKR
-- "Ei paljoa" → C7R
+- "Paljon" / "Liikaa" → BOOK
+- "Ei paljoa" → C7
 
 ---
 
-## [C5R] YKS HENKILÖ
+## C5R YKS HENKILÖ
 
 > **"Onks se riski jos se henkilö sairastuu tai lähtee?"**
 
-- "Joo on" / tunnistaa riskin → BOOKR
-- "Ei oikeestaan" / "On backup" → PEHMEÄR
+- "Joo on" / tunnistaa riskin → BOOK
+- "Ei oikeestaan" / "On backup" → PEHMEA
 
 ---
 
-## [C6R] ULKOINEN EI TOIMI
+## C6R ULKOINEN EI TOIMI
 
 > **"Mikä siinä on ollu hankalinta?"**
 
-*Kuuntele vastaus* → BOOKR
+*Kuuntele vastaus* → BOOK
 
 ---
 
-## [C7R] "EI PALJOA AIKAA"
+## C7R "EI PALJOA AIKAA"
 
 > **"Onks se sen takii et järjestelmät toimii hyvin vai et niitä ei oikeestaan kehitetä?"**
 
-- "Toimii hyvin" → PEHMEÄR
-- "Ei kehitetä" → BOOKR
+- "Toimii hyvin" → PEHMEA
+- "Ei kehitetä" → BOOK
 
 ---
 
-## [D1R] "EI KIINNOSTA"
+## D1R "EI KIINNOSTA"
 
 > **"Ymmärrän. Usein toi tulee esiin vasta kun katotaan numeroita tarkemmin – ja siks mä en oikeestaan myy mitään tässä puhelussa."**
 
-→ BOOKR
+→ BOOK
 
-*Jos edelleen kylmä:* → TEKSTIR
+*Jos edelleen kylmä:* → TEKSTI
 
 ---
 
-## [E1R] "EI OO AIKAA"
+## E1R "EI OO AIKAA"
 
 > **"Ymmärrän täysin – siks tää katsaus on vaan 30 minuuttia eikä sido mihinkään. Näät heti onks tässä teille mitään vai ei. Toimisko ensi viikolla paremmin?"**
 
-- "Joo" / antaa ajan → BOOKVAHVISTUSR
-- "Ei" / torjuu → TEKSTIR
+- "Joo" / antaa ajan → BOOKVAHVISTUS
+- "Ei" / torjuu → TEKSTI
 
 ---
 
-## [F1R] "SOITA MYÖHEMMIN"
+## F1R "SOITA MYÖHEMMIN"
 
 > **"Tottakai – millon ois parempi, ensi viikolla vai kuun lopussa?"**
 
-- Antaa ajan → CALLBACKR
-- "En tiiä" / "Katotaan" → TEKSTIR
+- Antaa ajan → CALLBACK
+- "En tiiä" / "Katotaan" → TEKSTI
 
 ---
 
-## [G1R] "MEILLÄ ON JO TOIMITTAJA"
+## G1R "MEILLÄ ON JO TOIMITTAJA"
 
 > **"Hyvä – monella on. Onks siihen oltu tyytyväisiä?"**
 
-- "Joo ollaan" → PEHMEÄR
-- "No ei aina" / "Vaihtelevasti" → G2R
+- "Joo ollaan" → PEHMEA
+- "No ei aina" / "Vaihtelevasti" → G2
 
 ---
 
-## [G2R] TOIMITTAJAAN TYYTYMÄTÖN
+## G2R TOIMITTAJAAN TYYTYMÄTÖN
 
 > **"Mikä siinä on ollu hankalinta?"**
 
-*Kuuntele vastaus* → BOOKR
+*Kuuntele vastaus* → BOOK
 
 ---
 
-## [H1R] "EN PÄÄTÄ NÄISTÄ"
+## H1R "EN PÄÄTÄ NÄISTÄ"
 
 > **"Ymmärrän – kuka teillä vastaa digipuolesta?"**
 
-- Antaa nimen → H2R
-- "En tiiä" / "En kerro" → TEKSTIR
+- Antaa nimen → H2
+- "En tiiä" / "En kerro" → TEKSTI
 
 ---
 
-## [H2R] SAA PÄÄTTÄJÄN NIMEN
+## H2R SAA PÄÄTTÄJÄN NIMEN
 
 > **"Voinko mainita et juteltiin sun kanssa ensin? Mikä hänen paras tavoitettavuus – sähköposti vai puhelin?"**
 
@@ -228,17 +228,17 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [BOOKR] TAPAAMISEHDOTUS
+## BOOKR TAPAAMISEHDOTUS
 
 > **"Me tehään lyhyt maksuton katsaus missä näkee vuotaako digipuolella aikaa tai rahaa. Ei sitoumuksia – joskus jatketaan, usein ei. Toimisko sulle huomenna tai ylihuomenna iltapäivällä?"**
 
-- "Joo" / sopii → BOOKVAHVISTUSR
-- "Lähetä sähköpostia" → S1R
-- "Ei" → TEKSTIR
+- "Joo" / sopii → BOOKVAHVISTUS
+- "Lähetä sähköpostia" → S1
+- "Ei" → TEKSTI
 
 ---
 
-## [BOOKVAHVISTUSR] AJAN VAHVISTUS
+## BOOKVAHVISTUSR AJAN VAHVISTUS
 
 > **"Hyvä! Mä lähetän kalenterikutsun. Mikä sähköposti on paras?"**
 
@@ -246,7 +246,7 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [S1R] SÄHKÖPOSTI
+## S1R SÄHKÖPOSTI
 
 > **"Voin lähettää – mut jotta en spämmää väärillä asioilla, kiinnostaisko sua enemmän myynnin kehittäminen vai prosessien tehostaminen?"**
 
@@ -254,7 +254,7 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [CALLBACKR] SOITTOAIKA
+## CALLBACKR SOITTOAIKA
 
 > **"Hyvä – mä merkitsen kalenteriin ja laitan sulle tekstarin muistutuksena päivää ennen. Mikä numero on paras?"**
 
@@ -262,25 +262,25 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [PEHMEÄR] PEHMEÄ LOPETUS
+## PEHMEAR PEHMEÄ LOPETUS
 
 > **"Selvä – kuulostaa et teillä on homma hanskassa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne joskus muuttuu?"**
 
-- "Joo" → TEKSTIVAHVISTUSR
-- "Ei" → LOPPUR
+- "Joo" → TEKSTIVAHVISTUS
+- "Ei" → LOPPU
 
 ---
 
-## [TEKSTIR] TEKSTIVIESTILUPA
+## TEKSTIR TEKSTIVIESTILUPA
 
 > **"Selvä – ei oo tarkotus tuputtaa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne muuttuu?"**
 
-- "Joo" → TEKSTIVAHVISTUSR
-- "Ei" → LOPPUR
+- "Joo" → TEKSTIVAHVISTUS
+- "Ei" → LOPPU
 
 ---
 
-## [TEKSTIVAHVISTUSR]
+## TEKSTIVAHVISTUSR
 
 > **"Kiitos – laitan viestin niin pysytään kartalla. Mukavaa päivää!"**
 
@@ -288,7 +288,7 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 
 ---
 
-## [LOPPUR]
+## LOPPUR
 
 > **"Selvä, kiitos ajasta. Mukavaa päivää!"**
 
@@ -307,7 +307,7 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan [B1R]
 | "En päätä" | H1R |
 | Tapaamisehdotus | BOOKR |
 | Sähköpostipyyntö | S1R |
-| Pehmeä lopetus | PEHMEÄR |
+| Pehmeä lopetus | PEHMEAR |
 | Tekstiviesti | TEKSTIR |
 
 ---

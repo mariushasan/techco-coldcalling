@@ -94,8 +94,17 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 
 > **"Hyvä – näkyykö sieltä selvästi missä menee eniten aikaa tai rahaa?"**
 
-- "Joo näkyy" + tyytyväinen → P1
+- "Joo näkyy" + tyytyväinen → B7
 - "No ei oikeestaan" / epävarma → K1
+
+---
+
+## B7A RAPORTOINTI TOIMII – JATKOKYSYMYS
+
+> **"Entäs kehityspuoli – onks teillä selkee suunnitelma miten digipuolta viedään eteenpäin vai onks se enemmän reagointia sitä mukaa ku tarpeita tulee?"**
+
+- "On suunnitelma" → P1
+- "Reagointia" / "Ei oikeestaan" → K1
 
 ---
 
@@ -114,7 +123,7 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 > **"Onks se yks henkilö vai useempi?"**
 
 - "Yks henkilö" → C5
-- "Useempi" / "Tiimi" → P1
+- "Useempi" / "Tiimi" → C8
 
 ---
 
@@ -122,7 +131,7 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 
 > **"Miten se on toiminu – saatteks apua sillon ku tarvitte?"**
 
-- "Hyvin" / tyytyväinen → P1
+- "Hyvin" / tyytyväinen → C9
 - "No ei aina" / "Vaihtelevasti" → C6
 
 ---
@@ -141,7 +150,7 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 > **"Onks se riski jos se henkilö sairastuu tai lähtee?"**
 
 - "Joo on" / tunnistaa riskin → K1
-- "Ei oikeestaan" / "On backup" → P1
+- "Ei oikeestaan" / "On backup" → C8
 
 ---
 
@@ -157,18 +166,62 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 
 > **"Onks se sen takii et järjestelmät toimii hyvin vai et niitä ei oikeestaan kehitetä?"**
 
-- "Toimii hyvin" → P1
+- "Toimii hyvin" → C8
 - "Ei kehitetä" → K1
+
+---
+
+## C8A TIIMI/JÄRJESTELMÄT KUNNOSSA – KEHITYSKYSYMYS
+
+> **"Entäs kehityspuoli – onks teillä selkee suunnitelma miten digipuolta viedään eteenpäin seuraavan vuoden aikana?"**
+
+- "On suunnitelma" → P1
+- "Ei oikeestaan" / "Katotaan sitä mukaa" → K1
+
+---
+
+## C9A ULKOINEN TOIMII – KEHITYSKYSYMYS
+
+> **"Entäs kehityspuoli – pystyykö ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
+
+- "Tuovat ideoita" → C10
+- "Enemmän ylläpitoa" / "Ei oikeestaan" → K1
+
+---
+
+## C10A KUMPPANI TOSI HYVÄ – VIIMEINEN YRITYS
+
+> **"Kuulostaa et teillä on harvinaisen hyvä tilanne. Onks teillä koskaan vertailtu muihin vai onks sama kumppani ollu alusta asti?"**
+
+- "Vertailtu" / "Ollaan tyytyväisiä" → P1
+- "Sama alusta" / "Ei vertailtu" → C11
+
+---
+
+## C11A EI VERTAILTU
+
+> **"Monesti kannattaa välillä kattoo mitä muut tekee – ei välttämättä vaihtamisen takii, mut et tietää missä mennään. Me tehään tollasia kevyitä katsauksia. Voisiks se kiinnostaa joskus?"**
+
+- "Ehkä" / "Vois kiinnostaa" → K1
+- "Ei" → P1
 
 ---
 
 ## D1A "EI KIINNOSTA"
 
-> **"Ymmärrän. Usein toi tulee esiin vasta kun katotaan numeroita tarkemmin – ja siks mä en oikeestaan myy mitään tässä puhelussa."**
+> **"Ymmärrän. Usein toi tulee esiin vasta kun katotaan numeroita tarkemmin – ja siks mä en oikeestaan myy mitään tässä puhelussa. Voinks kysyy ihan mielenkiinnosta – mikä osa digipuolesta vie teillä eniten aikaa tällä hetkellä?"**
 
-→ K1
+- Kertoo jotain → D2
+- "En tiiä" / "Ei mikään" / ei vastaa → T1
 
-*Jos edelleen kylmä:* → T1
+---
+
+## D2A KERTOO KIPUPISTEEN
+
+> **"Okei, toi on aika yleinen. Me ollaan autettu useempaa firmaa just ton kanssa. Oisitko avoin kuulemaan miten ne on ratkaissut sen – ihan lyhyesti?"**
+
+- "Joo" / "Voit kertoa" → K1
+- "Ei" → T1
 
 ---
 
@@ -194,7 +247,7 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 
 > **"Hyvä – monella on. Onks siihen oltu tyytyväisiä?"**
 
-- "Joo ollaan" → P1
+- "Joo ollaan" → G3
 - "No ei aina" / "Vaihtelevasti" → G2
 
 ---
@@ -204,6 +257,15 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 > **"Mikä siinä on ollu hankalinta?"**
 
 *Kuuntele vastaus* → K1
+
+---
+
+## G3A TOIMITTAJAAN TYYTYVÄINEN – KEHITYSKYSYMYS
+
+> **"Entäs kehityspuoli – pystyykö ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
+
+- "Tuovat ideoita" → P1
+- "Enemmän ylläpitoa" → K1
 
 ---
 
@@ -264,7 +326,7 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 
 ## P1A PEHMEÄ LOPETUS
 
-> **"Selvä – kuulostaa et teillä on homma hanskassa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne joskus muuttuu?"**
+> **"Selvä – kuulostaa et teillä on homma oikeesti hanskassa, mikä on harvinaista. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne tai kumppani joskus muuttuu?"**
 
 - "Joo" → T2
 - "Ei" → X1
@@ -301,3 +363,4 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 - Älä puolustele – hyväksy ja siirry
 - Kuuntele oikeasti
 - Yksi kysymys kerrallaan
+- Max 2 jatkokysymystä "kunnossa"-vastaukseen

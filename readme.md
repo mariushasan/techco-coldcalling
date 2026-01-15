@@ -31,12 +31,42 @@ Käyttö: Ctrl+F ja hae esim. "B1" + "A" siirtyäksesi kohtaan B1
 **Vastaukset:**
 - "Myynnin puolella" / "Sisäisissä prosesseissa" → B1
 - "Meillä on kunnossa" / "Ei oikeastaan" → C1
+- Epävarma / "En tiiä" / "Hmm" / hiljaisuus → A4
 - "Ei kiinnosta" → D1
 - "Ei oo aikaa" → E1
 - "Soita myöhemmin" → F1
 - "Meillä on jo toimittaja" → G1
 - "En päätä näistä" → H1
 - "Lähetä sähköpostia" → S1
+
+---
+
+## A4A EPÄVARMA – KONKRETISOI
+
+> **"Tarkotan esimerkiks sitä et jos asiakas tulee sisään, joutuuko joku siirtää sen tiedot käsin CRM:ään, laskutusjärjestelmään tai johonkin muualle – vai meneekö se automaattisesti?"**
+
+- "Joo menee käsin" / tunnistaa → B2
+- "Toimii automaattisesti" → A5
+- Edelleen epävarma → A6
+
+---
+
+## A5A AUTOMAATTINEN – RAPORTOINTI
+
+> **"Entäs raportointi – näättekste helposti mistä liidit tulee ja mikä toimii?"**
+
+- "Ei oikeestaan" / "Vois olla parempi" → B3
+- "Joo nähdään" → C1
+
+---
+
+## A6A EDELLEEN EPÄVARMA
+
+> **"Selvä – kuulostaa et teillä voi olla aika hyvin homma kasassa. Kuka teillä yleensä vastaa näistä digijutuista, ootko se sä vai joku muu?"**
+
+- "Mä" / "Minä vastaan" → C1
+- Antaa jonkun muun nimen → H2
+- "En tiiä" → P1
 
 ---
 

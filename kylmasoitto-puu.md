@@ -1,6 +1,6 @@
 # KYLMÄSOITTOSKRIPTI
 
-Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan B1
+Käyttö: Ctrl+F ja hae esim. "B1" + "R" siirtyäksesi kohtaan B1
 
 ---
 
@@ -291,24 +291,6 @@ Käyttö: Ctrl+F ja hae esim. "B1R" siirtyäksesi kohtaan B1
 ## LOPPUR
 
 > **"Selvä, kiitos ajasta. Mukavaa päivää!"**
-
----
-
-# PIKAVIITE
-
-| Tilanne | Hae |
-|---------|-----|
-| Kertoo ongelmasta | B1R |
-| "Meillä kunnossa" | C1R |
-| "Ei kiinnosta" | D1R |
-| "Ei oo aikaa" | E1R |
-| "Soita myöhemmin" | F1R |
-| "On jo toimittaja" | G1R |
-| "En päätä" | H1R |
-| Tapaamisehdotus | BOOKR |
-| Sähköpostipyyntö | S1R |
-| Pehmeä lopetus | PEHMEAR |
-| Tekstiviesti | TEKSTIR |
 
 ---
 

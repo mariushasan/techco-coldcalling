@@ -41,7 +41,6 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 - ["Meillä on kunnossa" / "Ei oikeastaan"](#meillä-on-kunnossa)
 - [Hiljaisuus / "Öö..." / "En oikein tiiä"](#selvennetään-kysymystä)
 - ["Ei kiinnosta"](#ei-kiinnosta)
-- ["Ei oo aikaa"](#ei-oo-aikaa)
 - ["Ei aikaa"](#ei-aikaa)
 - ["Meillä on jo toimittaja"](#meillä-on-jo-toimittaja)
 - ["En päätä näistä"](#en-päätä-näistä)

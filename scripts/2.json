@@ -1,19 +1,31 @@
 {
   "avaus": {
     "title": "AVAUS",
-    "script": "Moikka [nimi], täs soittelee Marius. Mä toimin teknologiajohtajana Techolla.",
+    "script": "Moikka [nimi], täs soittelee Marius.",
     "instruction": "Tauko – odota vastausta",
     "options": [
-      { "label": "Jatka", "target": "pyynto" }
+      {
+        "label": "Jatka",
+        "target": "pyynto"
+      }
     ]
   },
   "pyynto": {
     "title": "PYYNTÖ",
     "script": "Me tehään digikehitystä pk-yrityksille ja suoraan sanottuna mä soitan ihan kylmiltäni – onks sulla 30 sekuntia aikaa kuulla miksi, ja sit voit päättää kannattaako jatkaa?",
     "options": [
-      { "label": "Joo / Kerro", "target": "esittely" },
-      { "label": "Ei oo aikaa", "target": "ei-oo-aikaa" },
-      { "label": "Ei kiinnosta", "target": "ei-kiinnosta-avaus" }
+      {
+        "label": "Joo / Kerro",
+        "target": "esittely"
+      },
+      {
+        "label": "Ei oo aikaa",
+        "target": "ei-oo-aikaa"
+      },
+      {
+        "label": "Ei kiinnosta",
+        "target": "ei-kiinnosta-avaus"
+      }
     ]
   },
   "esittely": {
@@ -29,21 +41,48 @@
       "instruction": "Tauko – anna prospektin reagoida"
     },
     "options": [
-      { "label": "Jatka", "target": "paakysymys" }
+      {
+        "label": "Jatka",
+        "target": "paakysymys"
+      }
     ]
   },
   "paakysymys": {
     "title": "PÄÄKYSYMYS",
     "script": "Onks teillä jotain vastaavaa mitä ootte miettiny?",
     "options": [
-      { "label": "Joo / Ollaan mietitty / kertoo jotain", "target": "ollaan-mietitty" },
-      { "label": "Ei varsinaisesti / Ei oo tullu mietittyy", "target": "ei-oo-mietitty" },
-      { "label": "Meillä on jo kumppani", "target": "meilla-on-toimittaja" },
-      { "label": "Ei kiinnosta", "target": "ei-kiinnosta" },
-      { "label": "Ei oo aikaa", "target": "ei-oo-aikaa" },
-      { "label": "Soita myöhemmin", "target": "soita-myohemmin" },
-      { "label": "En päätä näistä", "target": "en-paata" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" }
+      {
+        "label": "Joo / Ollaan mietitty / kertoo jotain",
+        "target": "ollaan-mietitty"
+      },
+      {
+        "label": "Ei varsinaisesti / Ei oo tullu mietittyy",
+        "target": "ei-oo-mietitty"
+      },
+      {
+        "label": "Meillä on jo kumppani",
+        "target": "meilla-on-toimittaja"
+      },
+      {
+        "label": "Ei kiinnosta",
+        "target": "ei-kiinnosta"
+      },
+      {
+        "label": "Ei oo aikaa",
+        "target": "ei-oo-aikaa"
+      },
+      {
+        "label": "Soita myöhemmin",
+        "target": "soita-myohemmin"
+      },
+      {
+        "label": "En päätä näistä",
+        "target": "en-paata"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      }
     ]
   },
   "ollaan-mietitty": {
@@ -51,68 +90,128 @@
     "script": "Minkälaista juttua te ootte miettiny?",
     "instruction": "Kuuntele vastaus tarkasti",
     "options": [
-      { "label": "Kertoo konkreettisen projektin/tarpeen", "target": "konkreettinen-tarve" },
-      { "label": "Epämääräinen / \"jotain pitäis tehä\"", "target": "epamarainen-tarve" },
-      { "label": "Mainitsee tekoälyn / AI:n", "target": "tekoaly-tarve" }
+      {
+        "label": "Kertoo konkreettisen projektin/tarpeen",
+        "target": "konkreettinen-tarve"
+      },
+      {
+        "label": "Epämääräinen / \"jotain pitäis tehä\"",
+        "target": "epamarainen-tarve"
+      },
+      {
+        "label": "Mainitsee tekoälyn / AI:n",
+        "target": "tekoaly-tarve"
+      }
     ]
   },
   "konkreettinen-tarve": {
     "title": "KONKREETTINEN TARVE",
     "script": "Okei, kuulostaa selkeeltä. Onks teillä jo joku hoitamassa sitä vai etteko oo vielä lähteny liikkeelle?",
     "options": [
-      { "label": "Ei oo vielä ketään", "target": "ei-oo-ketaan" },
-      { "label": "On joku kattomassa", "target": "on-joku-kattomassa" },
-      { "label": "Ollaan jo tehty jotain", "target": "ollaan-jo-tehty" }
+      {
+        "label": "Ei oo vielä ketään",
+        "target": "ei-oo-ketaan"
+      },
+      {
+        "label": "On joku kattomassa",
+        "target": "on-joku-kattomassa"
+      },
+      {
+        "label": "Ollaan jo tehty jotain",
+        "target": "ollaan-jo-tehty"
+      }
     ]
   },
   "ei-oo-ketaan": {
     "title": "EI OO KETÄÄN",
     "script": "Selvä – me voitais kattoo se teille. Miten ois lyhyt katsaus vaikka ens viikolla, niin näät sopiiks meidän malli teille?",
     "options": [
-      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / sopii",
+        "target": "ajan-vahvistus"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "on-joku-kattomassa": {
     "title": "ON JOKU KATTOMASSA",
     "script": "Jees – onks se sisänen vai ulkonen tekijä?",
     "options": [
-      { "label": "Sisäinen", "target": "sisainen-kattoo" },
-      { "label": "Ulkoinen", "target": "ulkoinen-kattoo" }
+      {
+        "label": "Sisäinen",
+        "target": "sisainen-kattoo"
+      },
+      {
+        "label": "Ulkoinen",
+        "target": "ulkoinen-kattoo"
+      }
     ]
   },
   "sisainen-kattoo": {
     "title": "SISÄINEN KATTOO",
     "script": "Miten se on edenny – onks saatu aikaseks vai onks se vielä kesken?",
     "options": [
-      { "label": "Kesken / Ei oo edenny", "target": "ei-oo-edenny" },
-      { "label": "Etenee hyvin", "target": "tiimi-kunnossa" }
+      {
+        "label": "Kesken / Ei oo edenny",
+        "target": "ei-oo-edenny"
+      },
+      {
+        "label": "Etenee hyvin",
+        "target": "tiimi-kunnossa"
+      }
     ]
   },
   "ulkoinen-kattoo": {
     "title": "ULKOINEN KATTOO",
     "script": "Miten se on toiminu – saatteks apua sillon ku tarviitte?",
     "options": [
-      { "label": "Hyvin / tyytyväinen", "target": "ulkoinen-toimii" },
-      { "label": "No ei aina / Vaihtelevasti", "target": "ulkoinen-ei-toimi" }
+      {
+        "label": "Hyvin / tyytyväinen",
+        "target": "ulkoinen-toimii"
+      },
+      {
+        "label": "No ei aina / Vaihtelevasti",
+        "target": "ulkoinen-ei-toimi"
+      }
     ]
   },
   "ei-oo-edenny": {
     "title": "EI OO EDENNY",
     "script": "Se on aika yleistä – monesti sisäisillä on niin paljon muuta et nää jää roikkuu. Me voitais hoitaa se teille niin säästyy aikaa. Miten ois lyhyt katsaus?",
     "options": [
-      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / sopii",
+        "target": "ajan-vahvistus"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "ollaan-jo-tehty": {
     "title": "OLLAAN JO TEHTY",
     "script": "Miten se on toiminu – onks saatu mitä haluttiin?",
     "options": [
-      { "label": "Joo toimii", "target": "toimii-hyvin" },
-      { "label": "No ei ihan / Osittain", "target": "ei-ihan-toiminu" }
+      {
+        "label": "Joo toimii",
+        "target": "toimii-hyvin"
+      },
+      {
+        "label": "No ei ihan / Osittain",
+        "target": "ei-ihan-toiminu"
+      }
     ]
   },
   "ei-ihan-toiminu": {
@@ -120,30 +219,48 @@
     "script": "Mikä siinä on jääny vaivaamaan?",
     "instruction": "Kuuntele vastaus",
     "options": [
-      { "label": "Jatka", "target": "tapaamisehdotus" }
+      {
+        "label": "Jatka",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "toimii-hyvin": {
     "title": "TOIMII HYVIN",
     "script": "Hyvä kuulla. Entäs muita digijuttuja – onks teillä suunnitelmaa miten digipuolta viedään eteenpäin?",
     "options": [
-      { "label": "On suunnitelma", "target": "pehmea-lopetus" },
-      { "label": "Ei oikeestaan / Katotaan sitä mukaa", "target": "tapaamisehdotus" }
+      {
+        "label": "On suunnitelma",
+        "target": "pehmea-lopetus"
+      },
+      {
+        "label": "Ei oikeestaan / Katotaan sitä mukaa",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "epamarainen-tarve": {
     "title": "EPÄMÄÄRÄINEN TARVE",
     "script": "Joo, se on tosi yleistä – tietää et jotain pitäis tehä mut ei oo selkeetä kuvaa mistä alottaa. Siks me tehään maksuttomia katsauksia missä kartotetaan tilanne ja nähdään missä ois isoin hyöty.",
     "options": [
-      { "label": "Jatka", "target": "tapaamisehdotus" }
+      {
+        "label": "Jatka",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "tekoaly-tarve": {
     "title": "TEKOÄLY TARVE",
     "script": "Joo, tekoäly on nyt monella mielessä. Meilläkin on meneillään useempi AI-projekti asiakkaille. Onks sulla jo joku konkreettinen käyttökohde mielessä vai yleisemmin kiinnostus?",
     "options": [
-      { "label": "Konkreettinen juttu", "target": "konkreettinen-ai" },
-      { "label": "Yleinen kiinnostus", "target": "yleinen-ai-kiinnostus" }
+      {
+        "label": "Konkreettinen juttu",
+        "target": "konkreettinen-ai"
+      },
+      {
+        "label": "Yleinen kiinnostus",
+        "target": "yleinen-ai-kiinnostus"
+      }
     ]
   },
   "konkreettinen-ai": {
@@ -151,82 +268,148 @@
     "script": "Kerro lisää – minkälaisesta hommasta on kyse?",
     "instruction": "Kuuntele vastaus",
     "options": [
-      { "label": "Jatka", "target": "tapaamisehdotus" }
+      {
+        "label": "Jatka",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "yleinen-ai-kiinnostus": {
     "title": "YLEINEN AI KIINNOSTUS",
     "script": "Se on hyvä lähtökohta. Me voitais kattoo teijän prosesseja ja tunnistaa missä tekoälystä ois oikeesti hyötyä – eikä vaan hypeä. Miten ois lyhyt katsaus?",
     "options": [
-      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / sopii",
+        "target": "ajan-vahvistus"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "ei-oo-mietitty": {
     "title": "EI OO MIETITTY",
     "script": "Selvä – onks teillä tällä hetkellä jotain digijuttuja mitkä vie aikaa tai ei toimi niin hyvin ku pitäis?",
     "options": [
-      { "label": "Joo / kertoo jotain", "target": "kertoo-ongelman" },
-      { "label": "Ei oikeestaan", "target": "ei-ongelmia" }
+      {
+        "label": "Joo / kertoo jotain",
+        "target": "kertoo-ongelman"
+      },
+      {
+        "label": "Ei oikeestaan",
+        "target": "ei-ongelmia"
+      }
     ]
   },
   "kertoo-ongelman": {
     "title": "KERTOO ONGELMAN",
     "script": "Okei, toi on tuttu tilanne. Me ollaan autettu useempaa firmaa just ton kans. Miten ois lyhyt katsaus missä näät miten me voitais ratkaista sen?",
     "options": [
-      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / sopii",
+        "target": "ajan-vahvistus"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "ei-ongelmia": {
     "title": "EI ONGELMIA",
     "script": "Hyvä kuulla – harva pystyy sanoo noin. Miten te ootte hoitanu digipuolen – onks sisänen tiimi vai ulkonen kumppani?",
     "options": [
-      { "label": "Sisäinen tiimi", "target": "sisainen-tiimi" },
-      { "label": "Ulkoinen kumppani", "target": "ulkoinen-kumppani" },
-      { "label": "Ite hoidan / Mä ite", "target": "ite-hoidan" }
+      {
+        "label": "Sisäinen tiimi",
+        "target": "sisainen-tiimi"
+      },
+      {
+        "label": "Ulkoinen kumppani",
+        "target": "ulkoinen-kumppani"
+      },
+      {
+        "label": "Ite hoidan / Mä ite",
+        "target": "ite-hoidan"
+      }
     ]
   },
   "sisainen-tiimi": {
     "title": "SISÄINEN TIIMI",
     "script": "Onks se yks henkilö vai useempi?",
     "options": [
-      { "label": "Yks henkilö", "target": "yks-henkilo" },
-      { "label": "Useempi / Tiimi", "target": "tiimi-kunnossa" }
+      {
+        "label": "Yks henkilö",
+        "target": "yks-henkilo"
+      },
+      {
+        "label": "Useempi / Tiimi",
+        "target": "tiimi-kunnossa"
+      }
     ]
   },
   "yks-henkilo": {
     "title": "YKS HENKILÖ",
     "script": "Onks se riski jos se henkilö sairastuu tai lähtee?",
     "options": [
-      { "label": "Joo on / tunnistaa riskin", "target": "tapaamisehdotus" },
-      { "label": "Ei oikeestaan / On backup", "target": "tiimi-kunnossa" }
+      {
+        "label": "Joo on / tunnistaa riskin",
+        "target": "tapaamisehdotus"
+      },
+      {
+        "label": "Ei oikeestaan / On backup",
+        "target": "tiimi-kunnossa"
+      }
     ]
   },
   "tiimi-kunnossa": {
     "title": "TIIMI KUNNOSSA",
     "script": "Entäs kehityspuoli – onks teillä suunnitelma miten digipuolta viedään eteenpäin seuraavan vuoden aikana?",
     "options": [
-      { "label": "On suunnitelma", "target": "pehmea-lopetus" },
-      { "label": "Ei oikeestaan / Katotaan sitä mukaa", "target": "tapaamisehdotus" }
+      {
+        "label": "On suunnitelma",
+        "target": "pehmea-lopetus"
+      },
+      {
+        "label": "Ei oikeestaan / Katotaan sitä mukaa",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "ulkoinen-kumppani": {
     "title": "ULKOINEN KUMPPANI",
     "script": "Miten se on toiminu – saatteks apua sillon ku tarviitte?",
     "options": [
-      { "label": "Hyvin / tyytyväinen", "target": "ulkoinen-toimii" },
-      { "label": "No ei aina / Vaihtelevasti", "target": "ulkoinen-ei-toimi" }
+      {
+        "label": "Hyvin / tyytyväinen",
+        "target": "ulkoinen-toimii"
+      },
+      {
+        "label": "No ei aina / Vaihtelevasti",
+        "target": "ulkoinen-ei-toimi"
+      }
     ]
   },
   "ulkoinen-toimii": {
     "title": "ULKOINEN TOIMII",
     "script": "Entä kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?",
     "options": [
-      { "label": "Tuovat ideoita", "target": "kumppani-hyva" },
-      { "label": "Enemmän ylläpitoa / Ei oikeestaan", "target": "tapaamisehdotus" }
+      {
+        "label": "Tuovat ideoita",
+        "target": "kumppani-hyva"
+      },
+      {
+        "label": "Enemmän ylläpitoa / Ei oikeestaan",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "ulkoinen-ei-toimi": {
@@ -234,46 +417,76 @@
     "script": "Mikä siinä on ollu hankalinta?",
     "instruction": "Kuuntele vastaus",
     "options": [
-      { "label": "Jatka", "target": "tapaamisehdotus" }
+      {
+        "label": "Jatka",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "kumppani-hyva": {
     "title": "KUMPPANI HYVÄ",
     "script": "Kuulostaa et teillä on harvinaisen hyvä tilanne. Onks teillä koskaan vertailtu muihin vai onks sama kumppani ollu alusta asti?",
     "options": [
-      { "label": "Vertailtu / Ollaan tyytyväisiä", "target": "pehmea-lopetus" },
-      { "label": "Sama alusta / Ei vertailtu", "target": "ei-vertailtu" }
+      {
+        "label": "Vertailtu / Ollaan tyytyväisiä",
+        "target": "pehmea-lopetus"
+      },
+      {
+        "label": "Sama alusta / Ei vertailtu",
+        "target": "ei-vertailtu"
+      }
     ]
   },
   "ei-vertailtu": {
     "title": "EI VERTAILTU",
     "script": "Monesti kantsii välillä kattoo mitä muut tekee – ei pakosti vaihtamisen takii, mut et tietää missä mennään. Miten ois lyhyt katsaus, vaikka ens viikolla?",
     "options": [
-      { "label": "Ehkä / Vois kiinnostaa", "target": "tapaamisehdotus" },
-      { "label": "Ei", "target": "pehmea-lopetus" }
+      {
+        "label": "Ehkä / Vois kiinnostaa",
+        "target": "tapaamisehdotus"
+      },
+      {
+        "label": "Ei",
+        "target": "pehmea-lopetus"
+      }
     ]
   },
   "ite-hoidan": {
     "title": "ITE HOIDAN",
     "script": "Okei – miten paljon aikaa siihen menee suurin piirtein viikossa?",
     "options": [
-      { "label": "Paljon / Liikaa", "target": "tapaamisehdotus" },
-      { "label": "Ei paljoa", "target": "ei-paljoa-aikaa" }
+      {
+        "label": "Paljon / Liikaa",
+        "target": "tapaamisehdotus"
+      },
+      {
+        "label": "Ei paljoa",
+        "target": "ei-paljoa-aikaa"
+      }
     ]
   },
   "ei-paljoa-aikaa": {
     "title": "EI PALJOA AIKAA",
     "script": "Onks se sen takii et järjestelmät toimii hyvin vai et teillä ei oo aktiivista kehitystyötä?",
     "options": [
-      { "label": "Toimii hyvin", "target": "tiimi-kunnossa" },
-      { "label": "Ei kehitetä", "target": "tapaamisehdotus" }
+      {
+        "label": "Toimii hyvin",
+        "target": "tiimi-kunnossa"
+      },
+      {
+        "label": "Ei kehitetä",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "ei-kiinnosta-avaus": {
     "title": "EI KIINNOSTA",
     "script": "Selvä – ymmärrän. Hyvää päivän jatkoa!",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   },
@@ -281,40 +494,70 @@
     "title": "EI KIINNOSTA",
     "script": "Ymmärrän - voinks kysyy ihan mielenkiinnosta et mikä osa järjestelmistä vie teillä eniten aikaa just nyt?",
     "options": [
-      { "label": "Kertoo jotain", "target": "kertoo-kipupisteen" },
-      { "label": "En tiiä / Ei mikään / ei vastaa", "target": "tekstiviestilupa" }
+      {
+        "label": "Kertoo jotain",
+        "target": "kertoo-kipupisteen"
+      },
+      {
+        "label": "En tiiä / Ei mikään / ei vastaa",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "kertoo-kipupisteen": {
     "title": "KERTOO KIPUPISTEEN",
     "script": "Okei, toi on aika yleinen. Me ollaan autettu useempaa firmaa just ton kanssa. Oisitko avoin kuulemaan miten ne on ratkaissut sen – ihan lyhyesti?",
     "options": [
-      { "label": "Joo / Voit kertoa", "target": "tapaamisehdotus" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / Voit kertoa",
+        "target": "tapaamisehdotus"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "ei-oo-aikaa": {
     "title": "EI OO AIKAA",
     "script": "Ymmärrän täysin – millon ois parempi? Ens viikolla vai kuun lopussa?",
     "options": [
-      { "label": "Antaa ajan", "target": "soittoaika" },
-      { "label": "En tiiä / Katotaan", "target": "tekstiviestilupa" }
+      {
+        "label": "Antaa ajan",
+        "target": "soittoaika"
+      },
+      {
+        "label": "En tiiä / Katotaan",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "soita-myohemmin": {
     "title": "SOITA MYÖHEMMIN",
     "script": "Tottakai – millon ois parempi? Ens viikolla vai kuun lopussa?",
     "options": [
-      { "label": "Antaa ajan", "target": "soittoaika" },
-      { "label": "En tiiä / Katotaan", "target": "tekstiviestilupa" }
+      {
+        "label": "Antaa ajan",
+        "target": "soittoaika"
+      },
+      {
+        "label": "En tiiä / Katotaan",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "meilla-on-toimittaja": {
     "title": "MEILLÄ ON JO TOIMITTAJA",
     "script": "Selvä homma - onks siihen oltu tyytyväisiä?",
     "options": [
-      { "label": "Joo ollaan", "target": "toimittaja-tyytyvainen" },
-      { "label": "No ei aina / Vaihtelevasti", "target": "toimittaja-tyytymaton" }
+      {
+        "label": "Joo ollaan",
+        "target": "toimittaja-tyytyvainen"
+      },
+      {
+        "label": "No ei aina / Vaihtelevasti",
+        "target": "toimittaja-tyytymaton"
+      }
     ]
   },
   "toimittaja-tyytymaton": {
@@ -322,23 +565,38 @@
     "script": "Mikä siinä on ollu hankalinta?",
     "instruction": "Kuuntele vastaus",
     "options": [
-      { "label": "Jatka", "target": "tapaamisehdotus" }
+      {
+        "label": "Jatka",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "toimittaja-tyytyvainen": {
     "title": "TOIMITTAJAAN TYYTYVÄINEN",
     "script": "Entäs kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?",
     "options": [
-      { "label": "Tuovat ideoita", "target": "pehmea-lopetus" },
-      { "label": "Enemmän ylläpitoa", "target": "tapaamisehdotus" }
+      {
+        "label": "Tuovat ideoita",
+        "target": "pehmea-lopetus"
+      },
+      {
+        "label": "Enemmän ylläpitoa",
+        "target": "tapaamisehdotus"
+      }
     ]
   },
   "en-paata": {
     "title": "EN PÄÄTÄ NÄISTÄ",
     "script": "Ymmärrän – kuka teillä vastaa digipuolesta?",
     "options": [
-      { "label": "Antaa nimen", "target": "saa-paattajan" },
-      { "label": "En tiiä / En kerro", "target": "tekstiviestilupa" }
+      {
+        "label": "Antaa nimen",
+        "target": "saa-paattajan"
+      },
+      {
+        "label": "En tiiä / En kerro",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "saa-paattajan": {
@@ -346,7 +604,10 @@
     "script": "Tavoittaaks hänet parhaiten sähköpostitse vai puhelimitse?",
     "instruction": "Kirjaa ylös, kiitä, soita päättäjälle.",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   },
@@ -354,9 +615,18 @@
     "title": "TAPAAMISEHDOTUS",
     "script": "Me tehään lyhyitä maksuttomia katsauksia, joissa kartotetaan tilanne ja nähdään onks meistä teille hyötyä. Ei sitoumuksia – joskus jatketaan, usein ei. Toimisko sulle huomenna tai ylihuomenna iltapäivällä?",
     "options": [
-      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
-      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
-      { "label": "Ei", "target": "tekstiviestilupa" }
+      {
+        "label": "Joo / sopii",
+        "target": "ajan-vahvistus"
+      },
+      {
+        "label": "Lähetä sähköpostia",
+        "target": "sahkoposti"
+      },
+      {
+        "label": "Ei",
+        "target": "tekstiviestilupa"
+      }
     ]
   },
   "ajan-vahvistus": {
@@ -364,7 +634,10 @@
     "script": "Hyvä! Mä lähetän kalenterikutsun. Mikä sähköposti on paras?",
     "instruction": "Kirjaa sähköposti, vahvista aika, kiitä.",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true,
     "isSuccess": true
@@ -374,7 +647,10 @@
     "script": "Voin lähettää - mut jotta en spämmää väärillä asioilla, kiinnostaisko sua enemmän myynnin kehittäminen vai prosessien tehostaminen?",
     "instruction": "Kirjaa vastaus, lähetä personoitu sähköposti.",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   },
@@ -383,7 +659,10 @@
     "script": "Hyvä - mä merkitsen kalenteriin ja laitan sulle tekstarin muistutuksena päivää ennen. Mikä numero on paras?",
     "instruction": "Vahvista numero, kirjaa kalenteriin.",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   },
@@ -391,16 +670,28 @@
     "title": "PEHMEÄ LOPETUS",
     "script": "Selvä – kuulostaa et teillä on homma oikeesti hanskassa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne tai kumppani joskus muuttuu?",
     "options": [
-      { "label": "Joo", "target": "tekstivahvistus" },
-      { "label": "Ei", "target": "loppu" }
+      {
+        "label": "Joo",
+        "target": "tekstivahvistus"
+      },
+      {
+        "label": "Ei",
+        "target": "loppu"
+      }
     ]
   },
   "tekstiviestilupa": {
     "title": "TEKSTIVIESTILUPA",
     "script": "Selvä – ei oo tarkotus tuputtaa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne muuttuu?",
     "options": [
-      { "label": "Joo", "target": "tekstivahvistus" },
-      { "label": "Ei", "target": "loppu" }
+      {
+        "label": "Joo",
+        "target": "tekstivahvistus"
+      },
+      {
+        "label": "Ei",
+        "target": "loppu"
+      }
     ]
   },
   "tekstivahvistus": {
@@ -408,7 +699,10 @@
     "script": "Kiitos – laitan viestin niin pysytään kartalla. Mukavaa päivää!",
     "instruction": "Lähetä tekstiviesti: \"Moi! Marius Techolta. Tässä yhteystiedot jos digipuolen kehitys tulee ajankohtaiseksi: [puhelin] / [sähköposti]. – Marius\"",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   },
@@ -416,7 +710,10 @@
     "title": "LOPPU",
     "script": "Kiitos sun ajasta ja mukavaa päivää!",
     "options": [
-      { "label": "Aloita alusta", "target": "avaus" }
+      {
+        "label": "Aloita alusta",
+        "target": "avaus"
+      }
     ],
     "isEnding": true
   }

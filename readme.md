@@ -16,7 +16,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## SILTA
 
-> **"Mä soitan, koska me nähään tällä hetkellä monilla suomalaisilla pk-yrityksillä sama ilmiö digipuolella."**
+> **"Mä oon viime kuukausina jutellu aika monen [toimiala]-firman kanssa ja sama juttu toistuu."**
 
 *[Tauko 1-2 sek]*
 
@@ -26,7 +26,15 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## ONGELMA + REFERENSSI + KYSYMYS
 
-> **"Kun pk-yritys kasvaa, digipuoli kasvaa usein vähän sinne sun tänne ja lopputulos on usein sekasortonen. Esimerkiks Bo LKV:llä tilanne oli pitkälti tää ennen kun alettiin yhessä purkaa kokonaisuutta. Näkyyks tää teillä enemmän myynnin puolella vai sisäsissä prosesseissa?"**
+> **"Aika monessa firmassa käy kasvaessa niin et järjestelmiä tulee pala kerrallaan – ja sit ne ei toimi yhteen."**
+
+*[Tauko – anna heidän nyökätä tai äännähtää]*
+
+> **"Esimerkiks Bo LKV:llä oli sama tilanne ennen ku alettiin yhessä kattoo sitä."**
+
+*[Tauko 1-2 sek]*
+
+> **"Näkyyks tää teillä enemmän myynnissä vai muualla?"**
 
 **Vastaukset:**
 - ["Myynnin puolella" / "Sisäisissä prosesseissa"](#myyntiprosessit--syventävä)
@@ -211,7 +219,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## EI VERTAILTU
 
-> **"Monesti kannattaa välillä kattoo mitä muut tekee – ei välttämättä vaihtamisen takii, mut et tietää missä mennään. Me tehään tollasia kevyitä katsauksia. Voisiks se kiinnostaa joskus?"**
+> **"Monesti kannattaa välillä kattoo mitä muut tekee – ei vaihtamisen takii, mut et tietää missä mennään. Miten ois lyhyt katsaus, vaikka ensi viikolla?"**
 
 - ["Ehkä" / "Vois kiinnostaa"](#tapaamisehdotus)
 - ["Ei"](#pehmeä-lopetus)
@@ -220,7 +228,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "EI KIINNOSTA"
 
-> **"Ymmärrän. Usein toi tulee esiin vasta kun katotaan numeroita tarkemmin – ja siks mä en oikeestaan myy mitään tässä puhelussa. Voinks kysyy ihan mielenkiinnosta – mikä osa digipuolesta vie teillä eniten aikaa tällä hetkellä?"**
+> **"Ymmärrän. Voinks kysyy ihan mielenkiinnosta – mikä osa järjestelmistä vie teillä eniten aikaa just nyt?"**
 
 - [Kertoo jotain](#kertoo-kipupisteen)
 - ["En tiiä" / "Ei mikään" / ei vastaa](#tekstiviestilupa)

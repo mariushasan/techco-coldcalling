@@ -42,7 +42,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 - [Hiljaisuus / "Öö..." / "En oikein tiiä"](#selvennetään-kysymystä)
 - ["Ei kiinnosta"](#ei-kiinnosta)
 - ["Ei oo aikaa"](#ei-oo-aikaa)
-- ["Soita myöhemmin"](#soita-myöhemmin)
+- ["Ei aikaa"](#ei-aikaa)
 - ["Meillä on jo toimittaja"](#meillä-on-jo-toimittaja)
 - ["En päätä näistä"](#en-päätä-näistä)
 - ["Lähetä sähköpostia"](#sähköposti)
@@ -244,18 +244,9 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ---
 
-## "EI OO AIKAA"
+## "EI AIKAA"
 
-> **"Ymmärrän täysin – siks tää katsaus on vaan 30 minuuttia eikä sido mihinkään. Näät heti onks tässä teille mitään vai ei. Toimisko ens viikolla paremmin?"**
-
-- ["Joo" / antaa ajan](#ajan-vahvistus)
-- ["Ei" / torjuu](#tekstiviestilupa)
-
----
-
-## "SOITA MYÖHEMMIN"
-
-> **"Tottakai – millon ois parempi? Ens viikolla vai kuun lopussa?"**
+> **"(Ymmärrän täysin / tottakai) – millon ois parempi? Ens viikolla vai kuun lopussa?"**
 
 - [Antaa ajan](#soittoaika)
 - ["En tiiä" / "Katotaan"](#tekstiviestilupa)

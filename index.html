@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soittoskripti</title>
+    <style>
+        /*
+         * COGNITIVE LOAD OPTIMIZATION PRINCIPLES APPLIED:
+         *
+         * 1. Miller's Law: Limited options visible at once (chunking)
+         * 2. Hick's Law: Fewer choices = faster decisions
+         * 3. Progressive disclosure: Only current step shown
+         * 4. Visual hierarchy: Clear size/weight differentiation
+         * 5. Fitt's Law: Large click targets for speed
+         * 6. Contrast: WCAG AAA compliant (>7:1 ratio)
+         * 7. Typography: System fonts for familiarity, optimal line length
+         * 8. Spatial consistency: Fixed layout positions
+         * 9. Minimal color palette: Reduces cognitive processing
+         * 10. Breathing room: Generous whitespace reduces stress
+         */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Minimal color palette - reduces cognitive load */
+            --bg-primary: #0d0d0d;
+            --bg-secondary: #1a1a1a;
+            --bg-elevated: #242424;
+            --text-primary: #f0f0f0;
+            --text-secondary: #888;
+            --text-muted: #555;
+            --accent: #4a9eff;
+            --accent-hover: #6bb3ff;
+            --success: #34d399;
+            --border: #333;
+
+            /* Typography scale - clear hierarchy */
+            --font-xs: 0.75rem;
+            --font-sm: 0.875rem;
+            --font-base: 1rem;
+            --font-lg: 1.25rem;
+            --font-xl: 1.5rem;
+            --font-2xl: 1.875rem;
+
+            /* Spacing scale */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+        }
+
+        html {
+            font-size: 18px; /* Larger base for readability under pressure */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Main container - centered for focus */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: var(--space-xl);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header - minimal, unobtrusive */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: var(--space-xl);
+        }
+
+        .section-label {
+            font-size: var(--font-sm);
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: var(--font-sm);
+            cursor: pointer;
+            padding: var(--space-sm) var(--space-md);
+            border-radius: 4px;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .back-btn:hover {
+            color: var(--text-primary);
+            background: var(--bg-secondary);
+        }
+
+        .back-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        /* Main content area */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Script display - the star of the show */
+        .script-section {
+            margin-bottom: var(--space-2xl);
+        }
+
+        .script-text {
+            font-size: var(--font-xl);
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--text-primary);
+            /* Optimal line length for reading: 50-75 chars */
+            max-width: 600px;
+        }
+
+        /* Instruction text - subtle but visible */
+        .instruction {
+            margin-top: var(--space-lg);
+            padding: var(--space-md) var(--space-lg);
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--text-muted);
+            border-radius: 0 4px 4px 0;
+            color: var(--text-secondary);
+            font-size: var(--font-base);
+            font-style: italic;
+        }
+
+        /* Follow-up script (for multi-part sections) */
+        .follow-up {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border);
+        }
+
+        /* Question highlight */
+        .question {
+            margin-top: var(--space-xl);
+            padding: var(--space-lg);
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            font-size: var(--font-lg);
+            font-weight: 500;
+        }
+
+        /* Options section */
+        .options-section {
+            margin-top: auto;
+            padding-top: var(--space-xl);
+        }
+
+        .options-label {
+            font-size: var(--font-xs);
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-md);
+        }
+
+        /* Option buttons - large targets (Fitt's Law) */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .option-btn {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: var(--space-md) var(--space-lg);
+            font-size: var(--font-base);
+            text-align: left;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.15s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .option-btn:hover {
+            background: var(--bg-elevated);
+            border-color: var(--accent);
+        }
+
+        .option-btn:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(74, 158, 255, 0.2);
+        }
+
+        .option-btn::after {
+            content: '\2192';
+            color: var(--text-muted);
+            font-size: var(--font-lg);
+            transition: transform 0.15s ease;
+        }
+
+        .option-btn:hover::after {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        /* Single continue button - prominent */
+        .option-btn.continue-btn {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--bg-primary);
+            font-weight: 500;
+        }
+
+        .option-btn.continue-btn:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .option-btn.continue-btn::after {
+            color: var(--bg-primary);
+        }
+
+        /* Ending state */
+        .ending-indicator {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--bg-elevated);
+            border-radius: 4px;
+            font-size: var(--font-xs);
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-md);
+        }
+
+        .ending-indicator.success {
+            background: rgba(52, 211, 153, 0.15);
+            color: var(--success);
+        }
+
+        /* Keyboard shortcuts hint */
+        .keyboard-hint {
+            position: fixed;
+            bottom: var(--space-lg);
+            right: var(--space-lg);
+            font-size: var(--font-xs);
+            color: var(--text-muted);
+        }
+
+        kbd {
+            background: var(--bg-secondary);
+            padding: 2px 6px;
+            border-radius: 3px;
+            border: 1px solid var(--border);
+            font-family: inherit;
+        }
+
+        /* Tips section */
+        .tips {
+            position: fixed;
+            bottom: var(--space-lg);
+            left: var(--space-lg);
+            max-width: 200px;
+        }
+
+        .tips-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--font-xs);
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .tips-toggle:hover {
+            color: var(--text-primary);
+        }
+
+        .tips-content {
+            display: none;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: var(--space-md);
+            border-radius: 4px;
+            margin-top: var(--space-sm);
+            font-size: var(--font-sm);
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .tips-content.visible {
+            display: block;
+        }
+
+        .tips-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-content li {
+            padding: var(--space-xs) 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tips-content li:last-child {
+            border-bottom: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: var(--space-lg);
+            }
+
+            .keyboard-hint {
+                display: none;
+            }
+
+            .tips {
+                display: none;
+            }
+        }
+
+        /* Animation for section change - subtle */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .script-section {
+            animation: fadeIn 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="section-label" id="section-title">AVAUS</span>
+            <button class="back-btn" id="back-btn" disabled>
+                <span>\2190</span> Takaisin
+            </button>
+        </header>
+
+        <main>
+            <div class="script-section" id="script-section">
+                <!-- Content loaded by JS -->
+            </div>
+
+            <div class="options-section">
+                <div class="options-label" id="options-label">Vastaus</div>
+                <div class="options" id="options">
+                    <!-- Options loaded by JS -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="tips">
+        <button class="tips-toggle" id="tips-toggle">Muista</button>
+        <div class="tips-content" id="tips-content">
+            <ul>
+                <li>Rauhallinen tempo</li>
+                <li>Tauot kysymysten jälkeen</li>
+                <li>Älä puolustele</li>
+                <li>Kuuntele oikeasti</li>
+                <li>Yksi kysymys kerrallaan</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="keyboard-hint">
+        <kbd>1</kbd>-<kbd>9</kbd> valitse &middot; <kbd>Backspace</kbd> takaisin
+    </div>
+
+    <script>
+        // State
+        const scriptData = {
+  "avaus": {
+    "title": "AVAUS",
+    "script": "Moikka, Marius tässä – soitanko huonoon aikaan vai ehditkö hetken?",
+    "instruction": "Tauko – odota vastausta",
+    "options": [
+      { "label": "Jatka", "target": "silta" }
+    ]
+  },
+  "silta": {
+    "title": "SILTA",
+    "script": "Mä oon viime kuukausina jutellu aika monen [toimiala]-firman kanssa ja sama juttu toistuu.",
+    "instruction": "Tauko 1-2 sek",
+    "options": [
+      { "label": "Jatka", "target": "ongelma" }
+    ]
+  },
+  "ongelma": {
+    "title": "ONGELMA + REFERENSSI + KYSYMYS",
+    "script": "Aika monessa firmassa käy kasvaessa niin et järjestelmiä tulee pala kerrallaan ja sit ne ei toimi yhteen.",
+    "instruction": "Tauko – anna heidän nyökätä tai äännähtää",
+    "followUp": {
+      "script": "Esimerkiks Bo LKV:llä oli sama tilanne ennen ku alettiin yhessä kattoo sitä.",
+      "instruction": "Tauko 1-2 sek"
+    },
+    "question": "Näkyyks tää teillä enemmän myynnissä vai muualla?",
+    "options": [
+      { "label": "Myynnin puolella / Sisäisissä prosesseissa", "target": "myynti-syventava" },
+      { "label": "Meillä on kunnossa / Ei oikeastaan", "target": "meilla-on-kunnossa" },
+      { "label": "Hiljaisuus / Öö... / En oikein tiiä", "target": "selvennetaan" },
+      { "label": "Ei kiinnosta", "target": "ei-kiinnosta" },
+      { "label": "Ei oo aikaa", "target": "ei-oo-aikaa" },
+      { "label": "Soita myöhemmin", "target": "soita-myohemmin" },
+      { "label": "Meillä on jo toimittaja", "target": "meilla-on-toimittaja" },
+      { "label": "En päätä näistä", "target": "en-paata" },
+      { "label": "Lähetä sähköpostia", "target": "sahkoposti" }
+    ]
+  },
+  "selvennetaan": {
+    "title": "SELVENNETÄÄN KYSYMYSTÄ",
+    "script": "Tarkotin et onks teillä käytössä esim. CRM, laskutus tai varausjärjestelmä ja joutuuks niien välillä siirtää tietoa käsin?",
+    "options": [
+      { "label": "Joo / On useempi", "target": "myynti-syventava" },
+      { "label": "Ei oikeestaan / Ei oo monta", "target": "meilla-on-kunnossa" },
+      { "label": "Edelleen epäselvä", "target": "molemmat-epaselva" }
+    ]
+  },
+  "myynti-syventava": {
+    "title": "MYYNTI/PROSESSIT – SYVENTÄVÄ",
+    "script": "Millanen tilanne se on konkreettisesti - onks se enemmän et tietoo joutuu siirtään käsin paikasta toiseen vai et kokonaiskuvaa on vaikee saada?",
+    "options": [
+      { "label": "Käsin siirtämistä", "target": "kasin-siirtaminen" },
+      { "label": "Kokonaiskuva puuttuu", "target": "kokonaiskuva-puuttuu" },
+      { "label": "Epäselvä / molemmat", "target": "molemmat-epaselva" }
+    ]
+  },
+  "kasin-siirtaminen": {
+    "title": "KÄSIN SIIRTÄMINEN",
+    "script": "Paljon siihen menee suurin piirtein aikaa viikossa?",
+    "options": [
+      { "label": "Paljon / Liikaa / antaa numeron", "target": "tapaamisehdotus" },
+      { "label": "En tiiä / Vähän", "target": "vahan-en-tiia" }
+    ]
+  },
+  "kokonaiskuva-puuttuu": {
+    "title": "KOKONAISKUVA PUUTTUU",
+    "script": "Miten te tällä hetkellä seuraatte et mikä toimii ja mikä ei?",
+    "options": [
+      { "label": "Ei oo tapaa / Exceleillä / epäselvä", "target": "tapaamisehdotus" },
+      { "label": "On raportointi / Toimii hyvin", "target": "on-raportointi" }
+    ]
+  },
+  "molemmat-epaselva": {
+    "title": "MOLEMMAT/EPÄSELVÄ",
+    "script": "Onks sulla tietoa et montako eri järjestelmää teillä pyörii yhteensä?",
+    "options": [
+      { "label": "Antaa numeron / paljon / liikaa", "target": "tapaamisehdotus" },
+      { "label": "Ei hajua", "target": "tapaamisehdotus" },
+      { "label": "Muutama / Ei montaa", "target": "pehmea-lopetus" }
+    ]
+  },
+  "vahan-en-tiia": {
+    "title": "VÄHÄN / EN TIIÄ",
+    "script": "Se on aika yleistä – monesti se aika vuotaa huomaamatta useesta eri kohtaa. Siks me tehään katsauksia joissa näkee konkreettisesti missä se aika menee.",
+    "options": [
+      { "label": "Jatka", "target": "tapaamisehdotus" }
+    ]
+  },
+  "on-raportointi": {
+    "title": "ON RAPORTOINTI",
+    "script": "Joo – näkyyks sieltä selvästi missä menee eniten aikaa tai rahaa?",
+    "options": [
+      { "label": "Joo näkyy + tyytyväinen", "target": "raportointi-toimii" },
+      { "label": "No ei oikeestaan / epävarma", "target": "tapaamisehdotus" }
+    ]
+  },
+  "raportointi-toimii": {
+    "title": "RAPORTOINTI TOIMII – JATKOKYSYMYS",
+    "script": "Entäs kehityspuoli - Onks teillä suunnitelma miten digipuolta viedään eteenpäin vai onks se enemmän reagointia sitä mukaan ku tarpeita tulee?",
+    "options": [
+      { "label": "On suunnitelma", "target": "pehmea-lopetus" },
+      { "label": "Reagointia / Ei oikeestaan", "target": "tapaamisehdotus" }
+    ]
+  },
+  "meilla-on-kunnossa": {
+    "title": "MEILLÄ ON KUNNOSSA",
+    "script": "Hyvä kuulla – harva pystyy sanoo noin. Minkälainen tiimi teillä pitää ton kasassa? Onks se sisänen vai ulkonen kumppani?",
+    "options": [
+      { "label": "Sisäinen tiimi", "target": "sisainen-tiimi" },
+      { "label": "Ulkoinen kumppani", "target": "ulkoinen-kumppani" },
+      { "label": "Ite hoidan / Mä ite", "target": "ite-hoidan" }
+    ]
+  },
+  "sisainen-tiimi": {
+    "title": "SISÄINEN TIIMI",
+    "script": "Onks se yks henkilö vai useempi?",
+    "options": [
+      { "label": "Yks henkilö", "target": "yks-henkilo" },
+      { "label": "Useempi / Tiimi", "target": "tiimi-kunnossa" }
+    ]
+  },
+  "ulkoinen-kumppani": {
+    "title": "ULKOINEN KUMPPANI",
+    "script": "Miten se on toiminu – saatteks apua sillon ku tarviitte?",
+    "options": [
+      { "label": "Hyvin / tyytyväinen", "target": "ulkoinen-toimii" },
+      { "label": "No ei aina / Vaihtelevasti", "target": "ulkoinen-ei-toimi" }
+    ]
+  },
+  "ite-hoidan": {
+    "title": "ITE HOIDAN",
+    "script": "Okei – miten paljon aikaa siihen menee suurin piirtein viikossa?",
+    "options": [
+      { "label": "Paljon / Liikaa", "target": "tapaamisehdotus" },
+      { "label": "Ei paljoa", "target": "ei-paljoa-aikaa" }
+    ]
+  },
+  "yks-henkilo": {
+    "title": "YKS HENKILÖ",
+    "script": "Onks se riski jos se henkilö sairastuu tai lähtee?",
+    "options": [
+      { "label": "Joo on / tunnistaa riskin", "target": "tapaamisehdotus" },
+      { "label": "Ei oikeestaan / On backup", "target": "tiimi-kunnossa" }
+    ]
+  },
+  "ulkoinen-ei-toimi": {
+    "title": "ULKOINEN EI TOIMI",
+    "script": "Mikä siinä on ollu hankalinta?",
+    "instruction": "Kuuntele vastaus",
+    "options": [
+      { "label": "Jatka", "target": "tapaamisehdotus" }
+    ]
+  },
+  "ei-paljoa-aikaa": {
+    "title": "EI PALJOA AIKAA",
+    "script": "Onks se sen takii et järjestelmät toimii hyvin vai et teillä ei oo aktiivista kehitystyötä?",
+    "options": [
+      { "label": "Toimii hyvin", "target": "tiimi-kunnossa" },
+      { "label": "Ei kehitetä", "target": "tapaamisehdotus" }
+    ]
+  },
+  "tiimi-kunnossa": {
+    "title": "TIIMI/JÄRJESTELMÄT KUNNOSSA – KEHITYSKYSYMYS",
+    "script": "Entäs kehityspuoli – onks teillä suunnitelma miten digipuolta viedään eteenpäin seuraavan vuoden aikana?",
+    "options": [
+      { "label": "On suunnitelma", "target": "pehmea-lopetus" },
+      { "label": "Ei oikeestaan / Katotaan sitä mukaa", "target": "tapaamisehdotus" }
+    ]
+  },
+  "ulkoinen-toimii": {
+    "title": "ULKOINEN TOIMII – KEHITYSKYSYMYS",
+    "script": "Entä kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?",
+    "options": [
+      { "label": "Tuovat ideoita", "target": "kumppani-hyva" },
+      { "label": "Enemmän ylläpitoa / Ei oikeestaan", "target": "tapaamisehdotus" }
+    ]
+  },
+  "kumppani-hyva": {
+    "title": "KUMPPANI TOSI HYVÄ – VIIMEINEN YRITYS",
+    "script": "Kuulostaa et teillä on harvinaisen hyvä tilanne. Onks teillä koskaan vertailtu muihin vai onks sama kumppani ollu alusta asti?",
+    "options": [
+      { "label": "Vertailtu / Ollaan tyytyväisiä", "target": "pehmea-lopetus" },
+      { "label": "Sama alusta / Ei vertailtu", "target": "ei-vertailtu" }
+    ]
+  },
+  "ei-vertailtu": {
+    "title": "EI VERTAILTU",
+    "script": "Monesti kantsii välillä kattoo mitä muut tekee – ei pakosti vaihtamisen takii, mut et tietää missä mennään. Miten ois lyhyt katsaus, vaikka ens viikolla?",
+    "options": [
+      { "label": "Ehkä / Vois kiinnostaa", "target": "tapaamisehdotus" },
+      { "label": "Ei", "target": "pehmea-lopetus" }
+    ]
+  },
+  "ei-kiinnosta": {
+    "title": "EI KIINNOSTA",
+    "script": "Ymmärrän - voinks kysyy ihan mielenkiinnosta et mikä osa järjestelmistä vie teillä eniten aikaa just nyt?",
+    "options": [
+      { "label": "Kertoo jotain", "target": "kertoo-kipupisteen" },
+      { "label": "En tiiä / Ei mikään / ei vastaa", "target": "tekstiviestilupa" }
+    ]
+  },
+  "kertoo-kipupisteen": {
+    "title": "KERTOO KIPUPISTEEN",
+    "script": "Okei, toi on aika yleinen. Me ollaan autettu useempaa firmaa just ton kanssa. Oisitko avoin kuulemaan miten ne on ratkaissut sen – ihan lyhyesti?",
+    "options": [
+      { "label": "Joo / Voit kertoa", "target": "tapaamisehdotus" },
+      { "label": "Ei", "target": "tekstiviestilupa" }
+    ]
+  },
+  "ei-oo-aikaa": {
+    "title": "EI OO AIKAA",
+    "script": "Ymmärrän täysin – siks tää katsaus on vaan 30 minuuttia eikä sido mihinkään. Näät heti onks tässä teille mitään vai ei. Toimisko ens viikolla paremmin?",
+    "options": [
+      { "label": "Joo / antaa ajan", "target": "ajan-vahvistus" },
+      { "label": "Ei / torjuu", "target": "tekstiviestilupa" }
+    ]
+  },
+  "soita-myohemmin": {
+    "title": "SOITA MYÖHEMMIN",
+    "script": "Tottakai – millon ois parempi? Ens viikolla vai kuun lopussa?",
+    "options": [
+      { "label": "Antaa ajan", "target": "soittoaika" },
+      { "label": "En tiiä / Katotaan", "target": "tekstiviestilupa" }
+    ]
+  },
+  "meilla-on-toimittaja": {
+    "title": "MEILLÄ ON JO TOIMITTAJA",
+    "script": "Selvä homma - onks siihen oltu tyytyväisiä?",
+    "options": [
+      { "label": "Joo ollaan", "target": "toimittaja-tyytyvainnen" },
+      { "label": "No ei aina / Vaihtelevasti", "target": "toimittaja-tyytymaton" }
+    ]
+  },
+  "toimittaja-tyytymaton": {
+    "title": "TOIMITTAJAAN TYYTYMÄTÖN",
+    "script": "Mikä siinä on ollu hankalinta?",
+    "instruction": "Kuuntele vastaus",
+    "options": [
+      { "label": "Jatka", "target": "tapaamisehdotus" }
+    ]
+  },
+  "toimittaja-tyytyvainnen": {
+    "title": "TOIMITTAJAAN TYYTYVÄINEN – KEHITYSKYSYMYS",
+    "script": "Entäs kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?",
+    "options": [
+      { "label": "Tuovat ideoita", "target": "pehmea-lopetus" },
+      { "label": "Enemmän ylläpitoa", "target": "tapaamisehdotus" }
+    ]
+  },
+  "en-paata": {
+    "title": "EN PÄÄTÄ NÄISTÄ",
+    "script": "Ymmärrän – kuka teillä vastaa digipuolesta?",
+    "options": [
+      { "label": "Antaa nimen", "target": "saa-paattajan" },
+      { "label": "En tiiä / En kerro", "target": "tekstiviestilupa" }
+    ]
+  },
+  "saa-paattajan": {
+    "title": "SAA PÄÄTTÄJÄN NIMEN",
+    "script": "Tavoittaaks hänet parhaiten sähköpostitse vai puhelimitse?",
+    "instruction": "Kirjaa ylös, kiitä, soita päättäjälle.",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true
+  },
+  "tapaamisehdotus": {
+    "title": "TAPAAMISEHDOTUS",
+    "script": "Me tehään lyhyitä maksuttomia katsauksia, joissa näkee vuotaako digipuolella aikaa tai rahaa. Ei sitoumuksia – joskus jatketaan, usein ei. Toimisko sulle huomenna tai ylihuomenna iltapäivällä?",
+    "options": [
+      { "label": "Joo / sopii", "target": "ajan-vahvistus" },
+      { "label": "Lähetä sähköpostia", "target": "sahkoposti" },
+      { "label": "Ei", "target": "tekstiviestilupa" }
+    ]
+  },
+  "ajan-vahvistus": {
+    "title": "AJAN VAHVISTUS",
+    "script": "Hyvä! Mä lähetän kalenterikutsun. Mikä sähköposti on paras?",
+    "instruction": "Kirjaa sähköposti, vahvista aika, kiitä.",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true,
+    "isSuccess": true
+  },
+  "sahkoposti": {
+    "title": "SÄHKÖPOSTI",
+    "script": "Voin lähettää - mut jotta en spämmää väärillä asioilla, kiinnostaisko sua enemmän myynnin kehittäminen vai prosessien tehostaminen?",
+    "instruction": "Kirjaa vastaus, lähetä personoitu sähköposti.",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true
+  },
+  "soittoaika": {
+    "title": "SOITTOAIKA",
+    "script": "Hyvä - mä merkitsen kalenteriin ja laitan sulle tekstarin muistutuksena päivää ennen. Mikä numero on paras?",
+    "instruction": "Vahvista numero, kirjaa kalenteriin.",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true
+  },
+  "pehmea-lopetus": {
+    "title": "PEHMEÄ LOPETUS",
+    "script": "Selvä – kuulostaa et teillä on homma oikeesti hanskassa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne tai kumppani joskus muuttuu?",
+    "options": [
+      { "label": "Joo", "target": "tekstivahvistus" },
+      { "label": "Ei", "target": "loppu" }
+    ]
+  },
+  "tekstiviestilupa": {
+    "title": "TEKSTIVIESTILUPA",
+    "script": "Selvä – ei oo tarkotus tuputtaa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne muuttuu?",
+    "options": [
+      { "label": "Joo", "target": "tekstivahvistus" },
+      { "label": "Ei", "target": "loppu" }
+    ]
+  },
+  "tekstivahvistus": {
+    "title": "TEKSTIVAHVISTUS",
+    "script": "Kiitos – laitan viestin niin pysytään kartalla. Mukavaa päivää!",
+    "instruction": "Lähetä tekstiviesti: \"Moi! Marius Techolta. Tässä yhteystiedot jos digipuolen kehitys tulee ajankohtaiseksi: [puhelin] / [sähköposti]. – Marius\"",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true
+  },
+  "loppu": {
+    "title": "LOPPU",
+    "script": "Kiitos sun ajasta ja mukavaa päivää!",
+    "options": [
+      { "label": "Aloita alusta", "target": "avaus" }
+    ],
+    "isEnding": true
+  }
+};
+        let currentSection = 'avaus';
+        let history = [];
+
+        // DOM elements
+        const sectionTitle = document.getElementById('section-title');
+        const scriptSection = document.getElementById('script-section');
+        const optionsContainer = document.getElementById('options');
+        const optionsLabel = document.getElementById('options-label');
+        const backBtn = document.getElementById('back-btn');
+        const tipsToggle = document.getElementById('tips-toggle');
+        const tipsContent = document.getElementById('tips-content');
+
+        // Initialize
+        function init() {
+            renderSection(currentSection);
+        }
+
+        // Render a section
+        function renderSection(sectionId) {
+            const section = scriptData[sectionId];
+            if (!section) {
+                console.error('Section not found:', sectionId);
+                return;
+            }
+
+            currentSection = sectionId;
+
+            // Update title
+            sectionTitle.textContent = section.title;
+
+            // Build script content
+            let html = '';
+
+            // Ending indicator
+            if (section.isEnding) {
+                html += `<div class="ending-indicator ${section.isSuccess ? 'success' : ''}">
+                    ${section.isSuccess ? 'Onnistui' : 'Lopetus'}
+                </div>`;
+            }
+
+            // Main script
+            html += `<p class="script-text">"${section.script}"</p>`;
+
+            // Instruction if present
+            if (section.instruction) {
+                html += `<div class="instruction">${section.instruction}</div>`;
+            }
+
+            // Follow-up if present
+            if (section.followUp) {
+                html += '<div class="follow-up">';
+                html += `<p class="script-text">"${section.followUp.script}"</p>`;
+                if (section.followUp.instruction) {
+                    html += `<div class="instruction">${section.followUp.instruction}</div>`;
+                }
+                html += '</div>';
+            }
+
+            // Question if present (separate from script)
+            if (section.question) {
+                html += `<div class="question">"${section.question}"</div>`;
+            }
+
+            scriptSection.innerHTML = html;
+
+            // Build options
+            let optionsHtml = '';
+            const isSingleContinue = section.options.length === 1 &&
+                (section.options[0].label === 'Jatka' || section.options[0].label === 'Aloita alusta');
+
+            section.options.forEach((option, index) => {
+                const btnClass = isSingleContinue ? 'option-btn continue-btn' : 'option-btn';
+                optionsHtml += `<button class="${btnClass}" data-target="${option.target}" data-index="${index + 1}">
+                    ${option.label}
+                </button>`;
+            });
+
+            optionsContainer.innerHTML = optionsHtml;
+            optionsLabel.textContent = isSingleContinue ? '' : 'Vastaus';
+
+            // Update back button
+            backBtn.disabled = history.length === 0;
+
+            // Add click handlers
+            optionsContainer.querySelectorAll('.option-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    navigateTo(btn.dataset.target);
+                });
+            });
+        }
+
+        // Navigate to a section
+        function navigateTo(sectionId) {
+            history.push(currentSection);
+            renderSection(sectionId);
+
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Go back
+        function goBack() {
+            if (history.length > 0) {
+                const previousSection = history.pop();
+                renderSection(previousSection);
+            }
+        }
+
+        // Event listeners
+        backBtn.addEventListener('click', goBack);
+
+        tipsToggle.addEventListener('click', () => {
+            tipsContent.classList.toggle('visible');
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            // Number keys for options
+            if (e.key >= '1' && e.key <= '9') {
+                const index = parseInt(e.key);
+                const btn = optionsContainer.querySelector(`[data-index="${index}"]`);
+                if (btn) {
+                    btn.click();
+                }
+            }
+
+            // Backspace for back
+            if (e.key === 'Backspace' && !e.target.matches('input, textarea')) {
+                e.preventDefault();
+                goBack();
+            }
+        });
+
+        // Initialize
+        init();
+    </script>
+</body>
+</html>

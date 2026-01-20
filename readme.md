@@ -26,7 +26,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## ONGELMA + REFERENSSI + KYSYMYS
 
-> **"Aika monessa firmassa käy kasvaessa niin et järjestelmiä tulee pala kerrallaan – ja sit ne ei toimi yhteen."**
+> **"Aika monessa firmassa käy kasvaessa niin et järjestelmiä tulee pala kerrallaan ja sit ne ei toimi yhteen."**
 
 *[Tauko – anna heidän nyökätä tai äännähtää]*
 
@@ -51,7 +51,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## SELVENNETÄÄN KYSYMYSTÄ
 
-> **"Eli yksinkertasesti: onks teillä käytössä useempi eri ohjelma tai järjestelmä – esim. CRM, laskutus, varausjärjestelmä – ja joutuuks niiden välillä siirtää tietoa käsin?"**
+> **"Tarkotin et onks teillä käytössä esim. CRM, laskutus tai varausjärjestelmä ja joutuuks niien välillä siirtää tietoa käsin?"**
 
 - ["Joo" / "On useempi"](#myyntiprosessit--syventävä)
 - ["Ei oikeestaan" / "Ei oo monta"](#meillä-on-kunnossa)
@@ -65,7 +65,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## MYYNTI/PROSESSIT – SYVENTÄVÄ
 
-> **"Millanen tilanne se on konkreettisesti – onks se enemmän et tietoo joutuu siirtään käsin paikasta toiseen, vai et kokonaiskuvaa on vaikee saada?"**
+> **"Millanen tilanne se on konkreettisesti - onks se enemmän et tietoo joutuu siirtään käsin paikasta toiseen vai et kokonaiskuvaa on vaikee saada?"**
 
 - ["Käsin siirtämistä"](#käsin-siirtäminen)
 - ["Kokonaiskuva puuttuu"](#kokonaiskuva-puuttuu)
@@ -75,7 +75,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## KÄSIN SIIRTÄMINEN
 
-> **"Paljon siihen menee aikaa viikossa, suurin piirtein?"**
+> **"Paljon siihen menee suurin piirtein aikaa viikossa?"**
 
 - ["Paljon" / "Liikaa" / antaa numeron](#tapaamisehdotus)
 - ["En tiiä" / "Vähän"](#vähän--en-tiiä)
@@ -93,7 +93,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## MOLEMMAT/EPÄSELVÄ
 
-> **"Onks sulla joku käsitys montako eri järjestelmää teillä pyörii yhteensä?"**
+> **"Onks sulla tietoa et montako eri järjestelmää teillä pyörii yhteensä?"**
 
 - [Antaa numeron / "paljon" / "liikaa"](#tapaamisehdotus)
 - ["Ei hajua"](#tapaamisehdotus)
@@ -103,7 +103,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "VÄHÄN" / "EN TIIÄ"
 
-> **"Se on aika yleistä – monesti se aika vuotaa huomaamatta useesta eri kohtaa. Siks me tehään näitä katsauksia missä näkee konkreettisesti missä se aika menee."**
+> **"Se on aika yleistä – monesti se aika vuotaa huomaamatta useesta eri kohtaa. Siks me tehään katsauksia joissa näkee konkreettisesti missä se aika menee."**
 
 [Jatka →](#tapaamisehdotus)
 
@@ -111,7 +111,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "ON RAPORTOINTI"
 
-> **"Hyvä – näkyykö sieltä selvästi missä menee eniten aikaa tai rahaa?"**
+> **"Joo – näkyyks sieltä selvästi missä menee eniten aikaa tai rahaa?"**
 
 - ["Joo näkyy" + tyytyväinen](#raportointi-toimii--jatkokysymys)
 - ["No ei oikeestaan" / epävarma](#tapaamisehdotus)
@@ -120,7 +120,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## RAPORTOINTI TOIMII – JATKOKYSYMYS
 
-> **"Entäs kehityspuoli – onks teillä selkee suunnitelma miten digipuolta viedään eteenpäin vai onks se enemmän reagointia sitä mukaa ku tarpeita tulee?"**
+> **"Entäs kehityspuoli - Onks teillä suunnitelma miten digipuolta viedään eteenpäin vai onks se enemmän reagointia sitä mukaan ku tarpeita tulee?"**
 
 - ["On suunnitelma"](#pehmeä-lopetus)
 - ["Reagointia" / "Ei oikeestaan"](#tapaamisehdotus)
@@ -129,7 +129,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "MEILLÄ ON KUNNOSSA"
 
-> **"Hyvä homma – harva pystyy sanoo noin. Minkälainen tiimi teillä pitää ton kasassa, onks se sisänen vai ulkonen kumppani?"**
+> **"Hyvä kuulla – harva pystyy sanoo noin. Minkälainen tiimi teillä pitää ton kasassa?  Onks se sisänen vai ulkonen kumppani?"**
 
 - ["Sisäinen tiimi"](#sisäinen-tiimi)
 - ["Ulkoinen kumppani"](#ulkoinen-kumppani)
@@ -148,7 +148,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## ULKOINEN KUMPPANI
 
-> **"Miten se on toiminu – saatteks apua sillon ku tarvitte?"**
+> **"Miten se on toiminu – saatteks apua sillon ku tarviitte?"**
 
 - ["Hyvin" / tyytyväinen](#ulkoinen-toimii--kehityskysymys)
 - ["No ei aina" / "Vaihtelevasti"](#ulkoinen-ei-toimi)
@@ -157,7 +157,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "ITE HOIDAN"
 
-> **"Okei – miten paljon aikaa siihen menee viikossa, suurin piirtein?"**
+> **"Okei – miten paljon aikaa siihen menee suurin piirtein viikossa?"**
 
 - ["Paljon" / "Liikaa"](#tapaamisehdotus)
 - ["Ei paljoa"](#ei-paljoa-aikaa)
@@ -183,7 +183,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "EI PALJOA AIKAA"
 
-> **"Onks se sen takii et järjestelmät toimii hyvin vai et niitä ei oikeestaan kehitetä?"**
+> **"Onks se sen takii et järjestelmät toimii hyvin vai et teillä ei oo aktiivista kehitystyötä?"**
 
 - ["Toimii hyvin"](#tiimijärjestelmät-kunnossa--kehityskysymys)
 - ["Ei kehitetä"](#tapaamisehdotus)
@@ -192,7 +192,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## TIIMI/JÄRJESTELMÄT KUNNOSSA – KEHITYSKYSYMYS
 
-> **"Entäs kehityspuoli – onks teillä selkee suunnitelma miten digipuolta viedään eteenpäin seuraavan vuoden aikana?"**
+> **"Entäs kehityspuoli – onks teillä suunnitelma miten digipuolta viedään eteenpäin seuraavan vuoden aikana?"**
 
 - ["On suunnitelma"](#pehmeä-lopetus)
 - ["Ei oikeestaan" / "Katotaan sitä mukaa"](#tapaamisehdotus)
@@ -201,7 +201,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## ULKOINEN TOIMII – KEHITYSKYSYMYS
 
-> **"Entäs kehityspuoli – pystyykö ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
+> **"Entä kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
 
 - ["Tuovat ideoita"](#kumppani-tosi-hyvä--viimeinen-yritys)
 - ["Enemmän ylläpitoa" / "Ei oikeestaan"](#tapaamisehdotus)
@@ -219,7 +219,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## EI VERTAILTU
 
-> **"Monesti kannattaa välillä kattoo mitä muut tekee – ei vaihtamisen takii, mut et tietää missä mennään. Miten ois lyhyt katsaus, vaikka ensi viikolla?"**
+> **"Monesti kantsii välillä kattoo mitä muut tekee – ei pakosti vaihtamisen takii, mut et tietää missä mennään. Miten ois lyhyt katsaus, vaikka ens viikolla?"**
 
 - ["Ehkä" / "Vois kiinnostaa"](#tapaamisehdotus)
 - ["Ei"](#pehmeä-lopetus)
@@ -228,7 +228,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "EI KIINNOSTA"
 
-> **"Ymmärrän. Voinks kysyy ihan mielenkiinnosta – mikä osa järjestelmistä vie teillä eniten aikaa just nyt?"**
+> **"Ymmärrän - voinks kysyy ihan mielenkiinnosta et mikä osa järjestelmistä vie teillä eniten aikaa just nyt?"**
 
 - [Kertoo jotain](#kertoo-kipupisteen)
 - ["En tiiä" / "Ei mikään" / ei vastaa](#tekstiviestilupa)
@@ -246,7 +246,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "EI OO AIKAA"
 
-> **"Ymmärrän täysin – siks tää katsaus on vaan 30 minuuttia eikä sido mihinkään. Näät heti onks tässä teille mitään vai ei. Toimisko ensi viikolla paremmin?"**
+> **"Ymmärrän täysin – siks tää katsaus on vaan 30 minuuttia eikä sido mihinkään. Näät heti onks tässä teille mitään vai ei. Toimisko ens viikolla paremmin?"**
 
 - ["Joo" / antaa ajan](#ajan-vahvistus)
 - ["Ei" / torjuu](#tekstiviestilupa)
@@ -255,7 +255,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "SOITA MYÖHEMMIN"
 
-> **"Tottakai – millon ois parempi, ensi viikolla vai kuun lopussa?"**
+> **"Tottakai – millon ois parempi? Ens viikolla vai kuun lopussa?"**
 
 - [Antaa ajan](#soittoaika)
 - ["En tiiä" / "Katotaan"](#tekstiviestilupa)
@@ -264,7 +264,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## "MEILLÄ ON JO TOIMITTAJA"
 
-> **"Hyvä – monella on. Onks siihen oltu tyytyväisiä?"**
+> **"Selvä homma - onks siihen oltu tyytyväisiä?"**
 
 - ["Joo ollaan"](#toimittajaan-tyytyväinen--kehityskysymys)
 - ["No ei aina" / "Vaihtelevasti"](#toimittajaan-tyytymätön)
@@ -281,7 +281,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## TOIMITTAJAAN TYYTYVÄINEN – KEHITYSKYSYMYS
 
-> **"Entäs kehityspuoli – pystyykö ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
+> **"Entäs kehityspuoli – pystyyks ne tuomaan uusia ideoita vai onks se enemmän ylläpitoa?"**
 
 - ["Tuovat ideoita"](#pehmeä-lopetus)
 - ["Enemmän ylläpitoa"](#tapaamisehdotus)
@@ -299,7 +299,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## SAA PÄÄTTÄJÄN NIMEN
 
-> **"Voinko mainita et juteltiin sun kanssa ensin? Mikä hänen paras tavoitettavuus – sähköposti vai puhelin?"**
+> **"Tavoittaaks hänet parhaiten sähköpostitse vai puhelimitse?"**
 
 *Kirjaa ylös, kiitä, soita päättäjälle.*
 
@@ -311,7 +311,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## TAPAAMISEHDOTUS
 
-> **"Me tehään lyhyt maksuton katsaus missä näkee vuotaako digipuolella aikaa tai rahaa. Ei sitoumuksia – joskus jatketaan, usein ei. Toimisko sulle huomenna tai ylihuomenna iltapäivällä?"**
+> **"Me tehään lyhyitä maksuttomia katsauksia, joissa näkee vuotaako digipuolella aikaa tai rahaa. Ei sitoumuksia – joskus jatketaan, usein ei. Toimisko sulle huomenna tai ylihuomenna iltapäivällä?"**
 
 - ["Joo" / sopii](#ajan-vahvistus)
 - ["Lähetä sähköpostia"](#sähköposti)
@@ -329,7 +329,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## SÄHKÖPOSTI
 
-> **"Voin lähettää – mut jotta en spämmää väärillä asioilla, kiinnostaisko sua enemmän myynnin kehittäminen vai prosessien tehostaminen?"**
+> **"Voin lähettää - mut jotta en spämmää väärillä asioilla, kiinnostaisko sua enemmän myynnin kehittäminen vai prosessien tehostaminen?"**
 
 *Kirjaa vastaus, lähetä personoitu sähköposti.*
 
@@ -337,7 +337,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## SOITTOAIKA
 
-> **"Hyvä – mä merkitsen kalenteriin ja laitan sulle tekstarin muistutuksena päivää ennen. Mikä numero on paras?"**
+> **"Hyvä - mä merkitsen kalenteriin ja laitan sulle tekstarin muistutuksena päivää ennen. Mikä numero on paras?"**
 
 *Vahvista numero, kirjaa kalenteriin.*
 
@@ -345,7 +345,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## PEHMEÄ LOPETUS
 
-> **"Selvä – kuulostaa et teillä on homma oikeesti hanskassa, mikä on harvinaista. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne tai kumppani joskus muuttuu?"**
+> **"Selvä – kuulostaa et teillä on homma oikeesti hanskassa. Voinks laittaa tekstiviestillä yhteystiedot siltä varalta et tilanne tai kumppani joskus muuttuu?"**
 
 - ["Joo"](#tekstivahvistus)
 - ["Ei"](#loppu)
@@ -371,7 +371,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## LOPPU
 
-> **"Selvä, kiitos ajasta. Mukavaa päivää!"**
+> **"Kiitos sun ajasta ja mukavaa päivää!"**
 
 ---
 

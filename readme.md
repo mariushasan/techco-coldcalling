@@ -26,7 +26,7 @@ Klikkaa linkkejä siirtyäksesi kohtien välillä.
 
 ## ONGELMA + REFERENSSI + KYSYMYS
 
-> **"Kun pk-yritys kasvaa, digipuoli kasvaa usein vähän sinne sun tänne ja lopputulos on usein kasa järjestelmiä, jotka ei oikein puhu keskenään. Esimerkiks Bo LKV:llä tilanne oli pitkälti tää ennen kun alettiin yhessä purkaa kokonaisuutta. Näkyyks tää teillä enemmän myynnin puolella vai sisäsissä prosesseissa?"**
+> **"Kun pk-yritys kasvaa, digipuoli kasvaa usein vähän sinne sun tänne ja lopputulos on usein sekasortonen. Esimerkiks Bo LKV:llä tilanne oli pitkälti tää ennen kun alettiin yhessä purkaa kokonaisuutta. Näkyyks tää teillä enemmän myynnin puolella vai sisäsissä prosesseissa?"**
 
 **Vastaukset:**
 - ["Myynnin puolella" / "Sisäisissä prosesseissa"](#myyntiprosessit--syventävä)
